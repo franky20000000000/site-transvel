@@ -1,0 +1,487 @@
+/* :root{
+    --couleur: #51aff7;
+} */
+@font-face {
+    font-family: titre;
+    src: url(../police/Nunito-Black.ttf);
+}
+@font-face {
+    font-family: policepage;
+    src: url(../police/BASKVILL.TTF);
+}
+.animation{
+   
+    animation: animimageservice 4s alternate;
+}
+
+*{
+    outline: 0;
+    font-family: policepage;
+}
+body{
+    margin: 0;
+    padding: 0;
+    /* background:linear-gradient(to bottom right, #044e53,rgb(4, 38, 88)); couleur degrader du fond */
+    background-color: rgb(250, 250, 250);
+}
+header .avantnav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+}
+header .avantnav .imgmenu{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+header .avantnav .divAvantnav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    
+
+}
+header .avantnav .divAvantnav div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+header .avantnav h1{
+    font-family: titre;
+}
+header .avantnav div a{
+    text-decoration: none;
+    color: black;
+    width: max-content;
+}
+header .avantnav div a:hover{
+    color: #51aff7;
+}
+header .avantnav div .inscrire{
+    border: 2px solid #51aff7;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.2rem;
+    /* border-radius: 5px; */
+    color: #51aff7;
+
+}
+header .avantnav div .inscrire:hover{
+    background-color:  #51aff7;
+    color: white;
+    transition:.5s;
+
+}
+#selectioner{
+    border-top: 2px solid #51aff7;
+    background-color: #51aff750;
+}
+/* header{
+    position: sticky;
+    top: -86px;
+} */
+nav{
+    background-color: #1f2930;
+    height: 8vh;
+    position: sticky;
+    z-index: 100;
+    top: 0px;
+    width: 100%;
+   
+   
+}
+
+nav .lien{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    height: 100%;
+    align-items: center;
+    font-weight: bold;
+    
+    
+}
+nav .lien a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    width: max-content;
+    height: 100%;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+nav .lien a:hover{
+    border-top: 2px solid #51aff7;
+    background-color: #51aff750;
+    
+}
+
+header .entete{
+    background: url('../image/photo/localisation.jpg');
+    background-size: 100%;
+    height: 150vh;
+    background-repeat: no-repeat;
+    display: flex;
+    
+    
+}
+header .entete div{
+    background-color: rgba(0, 0, 0, 0.295);
+    width: 100%;
+    height: 100%;
+    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .entete div p{
+    top: -100px;
+    width: 50%;
+    margin-left: 40px;
+    font-size: 2rem;
+    
+    position: relative;
+    animation: anim1messageheader1 3s alternate;
+
+    
+}
+@keyframes anim1messageheader1  {
+    from{
+        top:100px;
+        opacity: 0;        
+    }
+    to{
+        top: -100px;
+        opacity: 1;
+    }
+}
+
+@keyframes anim1messageheader  {
+    from{
+        top:100px;
+        opacity: 0;        
+    }
+    to{
+        top: -100px;
+        opacity: 1;
+    }
+}
+
+header .entete div a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.2rem;
+    width: max-content;
+    /* border-radius: 5px; */
+    color: white;
+    text-align: center;
+    margin-left: 40px;
+    position: relative;
+    top: -100px;
+}
+header .entete div a:hover{
+   
+    /* border-radius: 5px; */
+    color: #51aff7;
+    text-align: center;
+    background-color:white ;
+}
+
+main .agence{
+    text-align: center;
+}
+main .agence h2{
+    display: none;
+}
+main .agence .divAgence {
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+    position: relative;
+    top: -120px;
+    /* display: grid;
+    grid-template-columns: 250fr 250fr 250fr; */
+    text-align: center;
+    width: 100%;
+   
+}
+main .agence .divAgence div{
+    
+    width: 40%;
+}
+main .agence .divAgence div img{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    
+    
+}
+
+
+@keyframes anim {
+    0%{
+        transform: rotate(10deg);
+        
+    }
+    50%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(10deg);
+        
+    }
+}
+
+main .agence .divAgence div p{
+    position: relative;
+    
+    top: 18rem;
+    font-size: 1.8rem;
+    font-family: titre;
+    color: white;
+    text-shadow: 0px 0px 8px black;
+    
+}
+main .agence .lienVersAutreAgence a{
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 2px solid #51aff7;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    color: #51aff7;
+
+}
+main .agence .lienVersAutreAgence a:hover{
+    background-color:  #51aff7;
+    color: white;
+    transition:.5s;
+
+} 
+main .service{
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+}
+main .service h2{
+    text-align: center;
+    color: #000000;
+    
+}
+main .service .divService{
+    display: grid;
+    grid-template-columns: 100fr 100fr 100fr;
+    gap: 10px;
+}
+main .service .divService .differentService{
+    
+    border: 10px solid #7d7f807c;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+  
+
+}
+
+main .service .divService .differentService img{
+    width: 80px;
+    height: 80px;
+    
+    position: relative;
+}
+
+@keyframes animimageservice {
+    to{
+        top: 0px;
+        opacity: 1;
+    }
+    from{
+        top: 100px;
+        opacity: 0;
+    }
+}
+main .avantfooter{
+    background:linear-gradient(90deg,rgba(0, 0, 0, 0.486),rgba(0, 0, 0, 0.486)), url("../image/photo/bus.JPG");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+    color: white;
+    
+}
+main .avantfooter h1{
+    font-size: 50px;
+}
+main .avantfooter a{
+   
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.2rem;
+    width: max-content;
+    /* border-radius: 5px; */
+    color: white;
+    text-align: center;
+}
+main .avantfooter a:hover{
+   
+    
+    
+    /* border-radius: 5px; */
+    color: #51aff7;
+    text-align: center;
+    background-color:white ;
+}
+
+
+footer{
+    background-color: #1f2930;
+    height: 50vh;
+    
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}   
+footer .footercontenue{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+footer .footercontenue div{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+footer div h3{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+footer .footercontenue a{
+ 
+    color: #51aff7;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.fin{
+    text-align: center;
+}
+/* navbar */
+@media screen and ( min-width:0px) and (max-width:800px) {
+    body {
+        /* background-color: blue; */
+        width: 100%;
+    }
+    header .entete{
+        margin-top: 93px;
+        height: 50vh;
+       
+        
+    }
+    header .entete div p{
+       top: 0px;
+        width: 75%;
+        margin-left: 40px;
+        font-size: 1.1rem;
+        
+        position: initial;
+        
+    }
+    header .entete div a{
+        font-size: 1.2rem;
+    
+        position: initial;
+       
+    }
+  
+    /* header .avantnav .divAvantnav div{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    } */
+ 
+    /* header .avantnav div a{
+        text-decoration: none;
+        color: black;
+        width: max-content;
+    } */
+    /* header .avantnav div a:hover{
+        color: #51aff7;
+    } */
+    /* header .avantnav div .inscrire{
+        border: 2px solid #51aff7;
+        padding: 10px 20px 10px 20px;
+        font-size: 1.2rem;
+      
+        color: #51aff7;
+    } */
+    /* header .avantnav div .inscrire:hover{
+        background-color:  #51aff7;
+        color: white;
+        transition:.5s;
+
+    } */
+
+    main .agence{
+        text-align: center;
+    }
+    main .agence h2{
+        display: block;
+    }
+    main .agence .divAgence {
+        display: flex;
+        flex-direction: column;
+       justify-content: inherit;
+        gap: 0px;
+        position:inherit;
+        top: 0px;
+        /* display: grid;
+        grid-template-columns: 250fr 250fr 250fr; */
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    main .agence .divAgence div{
+       margin-top: -50px;
+        width: 100%;
+    }
+    
+    main .agence .divAgence div img{
+    
+        
+        height: 300px;
+       
+        
+    }
+    main .agence .divAgence div p{
+    
+        
+        top: 18rem;
+       
+        
+    }
+    main .service .divService{
+        display: flex;
+        flex-direction: column;
+    }
+
+ 
+}
